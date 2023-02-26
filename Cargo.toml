@@ -1,16 +1,17 @@
 [package]
-name = "eframe_template"
+name = "hollow-egui"
 version = "0.1.0"
-authors = ["Emil Ernerfeldt <emil.ernerfeldt@gmail.com>"]
+authors = ["fruit-bird"]
 edition = "2021"
-rust-version = "1.65"
+rust-version = "1.67"
 
 
 [dependencies]
+hollow = { git = "https://github.com/fruit-bird/hollow" }
 egui = "0.21.0"
 eframe = { version = "0.21.0", default-features = false, features = [
     "accesskit",     # Make egui comptaible with screen readers. NOTE: adds a lot of dependencies.
-    "default_fonts", # Embed the default egui fonts.
+    # "default_fonts", # Embed the default egui fonts.
     "glow",          # Use the glow rendering backend. Alternative: "wgpu".
     "persistence",   # Enable restoring app state when restarting the app.
 ] }
