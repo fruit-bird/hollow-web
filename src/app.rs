@@ -93,7 +93,7 @@ impl eframe::App for HollowApp {
                     Ok(entry) => entry,
                     Err(_) => "Error while converting".to_owned(),
                 };
-                self.output = format!("{}", the_spooky);
+                self.output = the_spooky;
             }
 
             ui.horizontal(|ui| {
