@@ -96,6 +96,8 @@ impl eframe::App for HollowApp {
                 self.output = the_spooky;
             }
 
+            ui.separator();
+
             ui.horizontal(|ui| {
                 ui.label("Output: ");
                 ui.add(
